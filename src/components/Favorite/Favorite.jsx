@@ -1,4 +1,3 @@
-// import React from 'react'
 
 import CatalogItem from "../Catalog/CatalogItem.jsx";
 import { useSelector } from "react-redux";
@@ -15,8 +14,8 @@ const Favorites = () => {
         <StyledCarsList>
           {favoritesCars.length === 0 && (
             <h2>
-              No car
-              <span style={{ color: "blue" }}>Favorites</span>.
+              No any car
+              
             </h2>
           )}
           {favoritesCars?.map((item, index) => {

@@ -84,12 +84,12 @@ const uniqueOp = [...new Set(allCars?.map((item) =>
   .filter((item) => (carFilter ? item.make === carFilter : true))
 
   useEffect(() => {
-    if (firstLoad) {
+    if (firstLoad === true) {
       dispatch(fetchCarsThunk(page));
       dispatch(isFirstLoad(false));
       setPage(page + 1);
     }
-  }, [dispatch]);
+  }, [dispatch, firstLoad, page] );
 
 
   const handleLoadMoreClick = () => {
