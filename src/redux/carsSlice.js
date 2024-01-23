@@ -7,7 +7,6 @@ const initialState = {
   favoriteList: [],
   isLoadMore: true,
   firstLoad: true,
-  modalIsOpen: false,
   clickCardId: "",
 
   select: "",
@@ -30,9 +29,7 @@ export const carsSlice = createSlice({
     isFirstLoad: (state, { payload }) => {
       state.firstLoad = payload;
     },
-    changeModalOpen: (state, { payload }) => {
-      state.modalIsOpen = payload;
-    },
+   
     changeClickCardId: (state, { payload }) => {
       state.clickCardId = payload;
     },
@@ -72,7 +69,6 @@ export const {
   addFavorite,
   deleteFavorite,
   isFirstLoad,
-  changeModalOpen,
   changeClickCardId,
   changeSelectFilter,
   changeFilters,

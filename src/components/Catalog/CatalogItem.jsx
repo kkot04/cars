@@ -67,6 +67,7 @@ const CatalogItem = ({ item }) => {
         </StyledCardDescription>
         <StyledButton type="button">Learn more</StyledButton>
       </StyledCardItem>
+      
     </>
   );
 };
